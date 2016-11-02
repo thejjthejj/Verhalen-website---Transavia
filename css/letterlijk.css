@@ -49,6 +49,7 @@
     margin: 0!important;
     margin-bottom: 1em;
     background: none;
+    width: 100%;
 }
 
 .letterlijk article ul li:hover {
