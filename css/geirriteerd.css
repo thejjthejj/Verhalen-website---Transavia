@@ -1,0 +1,242 @@
+.geirriteerd * {
+    transition: all .2s ease;
+    animation: background .5s 20;
+}
+
+@font-face {
+    font-family: 'crazy';
+    src: url('../fonts/crazy.ttf') format('truetype');
+}
+
+.sketch {
+    height: 40em;
+    width: 100%;
+    z-index: -2;
+    position: relative;
+}
+
+.geirriteerd {
+    /*background: url(../images/gifs/Smiley-1-done.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 80em;*/
+    background: #fff;
+}
+
+.geirriteerd header {
+    justify-content: center;
+}
+
+.geirriteerd header .logo {
+    border: 0;
+}
+
+.geirriteerd section {
+    padding: 10em;
+}
+
+.geirriteerd .lead {
+    font-family: "Transavia_xbold", "Open Sans", "Helvetica", sans-serif;
+}
+
+.geirriteerd p i {
+    color: #ff3368;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.geirriteerd section p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+    font-size: 1.3em;
+    color: black;
+    font-family: "Transavia_Sans", "Open Sans", "Helvetica", sans-serif;
+    text-align: left;
+}
+
+.geirriteerd section p:hover:nth-child(7) {
+    transform: skew(90deg);
+}
+
+.geirriteerd section p:hover:nth-child(8) {
+    transform: scale(1.5);
+}
+
+.geirriteerd section h1 {
+    font-size: 7.5em;
+    color: #28009f;
+    margin-top: 0;
+    line-height: 1.2;
+    font-family: 'crazy';
+    text-shadow: 6px -6px #f2dc1d, -6px -12px #c12f2f, -18px -18px #cd5d2f, -24px -24px #f2dc1d, -30px -30px #f2dc1d, -36px -36px #c12f2f;
+    animation: eighteen .5s infinite;
+}
+
+.geirriteerd section h1:hover {}
+
+.geirriteerd section p i:hover {
+    animation: eighteen 1.5s;
+}
+
+.geirriteerd article {
+    box-shadow: 0px!important;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75)!important;
+    border-radius: 0;
+    border: 0em solid rgba(0, 0, 0, 0.0);
+    z-index: 9;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+    background: none;
+}
+
+.geirriteerd .smiley1 {
+    margin: auto;
+    margin-top: 15em;
+}
+
+.geirriteerd section h2 {
+    transform: rotate(90deg);
+    font-size: 8em;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    margin-top: 3em;
+}
+
+#star-svg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    margin: -30%;
+    z-index: -1;
+}
+
+
+/*#gefrustreerd-svg {
+    position: relative;
+    top: 0vh;
+    width: 70%;
+    left: 5em;
+}*/
+
+@keyframes eighteen {
+    0% {
+        text-shadow: 6px -6px #f2dc1d, -6px -12px #c12f2f, -18px -18px #cd5d2f, -24px -24px #f2dc1d, -30px -30px #f2dc1d, -36px -36px #c12f2f;
+    }
+    25% {
+        text-shadow: 5px -5px #cd5d2f;
+    }
+    50% {
+        text-shadow: 5px 5px #f2dc1d;
+    }
+    75% {
+        text-shadow: -5px 5px #c12f2f;
+    }
+}
+
+@keyframes background {
+    0% {
+        background: #f2dc1d;
+    }
+    25% {
+        background: #c12f2f;
+    }
+    50% {
+        background: #cd5d2f;
+    }
+    75% {
+        background: #f2dc1d;
+    }
+}
+
+@keyframes jiggle {
+    15%,
+    40%,
+    75%,
+    100% {
+        transform-origin: center center;
+    }
+    15% {
+        transform: scale(1.4, 1.2);
+    }
+    40% {
+        transform: scale(0.9, 0.9);
+    }
+    75% {
+        transform: scale(1.08, 1);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+
+/*****Breakpoint kleine devices****/
+
+@media screen and (max-width: 43.6875em) {
+    .geirriteerd section {
+        padding: 1em;
+    }
+    .geirriteerd section h1 {
+        font-size: 2.4em;
+    }
+    .geirriteerd section p {
+        font-size: 1.2em;
+    }
+}
+
+
+/*****Breakpoint ipad****/
+
+@media screen and (min-width: 43.75em) and (max-width: 68.6875em) {
+    .geirriteerd section p {
+        column-count: 1;
+        column-gap: none;
+        column-rule: none;
+        text-align: left;
+    }
+    .geirriteerd section {
+        padding: 5em;
+    }
+    .geirriteerd section h1 {
+        font-size: 4em;
+    }
+    .geirriteerd section {
+        width: 45em;
+        margin: auto;
+    }
+}
+
+
+/*******Breakpoint laptop******/
+
+@media screen and (min-width: 68.75em) and (max-width: 87.4375em) {
+    .geirriteerd article {
+        margin: 0!important;
+        padding: 0!important;
+    }
+    .geirriteerd section h1 {
+        font-size: 5.6em;
+    }
+    .geirriteerd section {
+        width: 65em;
+        margin: auto;
+    }
+}
+
+
+/*******Breakpoint desktop******/
+
+@media screen and (min-width: 87.5em) {
+    .geirriteerd article {
+        width: 100%;
+        margin-left: 0!important;
+        padding: 0;
+    }
+    .geirriteerd section {
+        width: 75em;
+        margin: auto;
+    }
+}

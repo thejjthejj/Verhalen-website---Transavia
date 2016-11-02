@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates');
+.letterlijk * {
+    transition: all .2s ease;
+}
+
+.letterlijk {
+    background-color: black;
+    background-image: url(../images/bg.png);
+    background-size: .5em;
+}
+
+.letterlijk header {
+    justify-content: center;
+}
+
+.smurf {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 50em
+}
+
+.letterlijk header .logo {
+    border: 0;
+}
+
+.letterlijk section {
+    padding: 10em;
+}
+
+.letterlijk section p {
+    margin-bottom: 1em;
+    line-height: 1.4em;
+    font-size: 1.3em;
+    text-align: left;
+    color: #fff;
+    line-height: 1.5em;
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: .5em 0 .5em;
+}
+
+.letterlijk article {
+    box-shadow: 0px!important;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75)!important;
+    border-radius: 0;
+    border: 0em solid rgba(0, 0, 0, 0.0);
+    padding: 0;
+    margin: 0!important;
+    margin-bottom: 1em;
+    background: none;
+}
+
+.letterlijk article ul li:hover {
+    animation: jiggle .4s;
+}
+
+.neon {
+    font-family: neon;
+    color: #FB4264;
+    font-size: 9.2em;
+    text-shadow: 0vw 0vw 3vw #F40A35;
+    animation: neon 1s ease infinite;
+}
+
+.uit {
+    animation: gebroken-neon 10s forwards;
+}
+
+.flux {
+    font-family: monoton;
+    color: #426DFB;
+    font-size: 3em;
+    text-shadow: 0 0 3em #2356FF;
+    animation: flux 2s linear infinite;
+    width: 100%;
+}
+
+@keyframes gebroken-neon {
+    21%,
+    39%,
+    45%,
+    47%,
+    53% {
+        color: #000;
+        text-shadow: none;
+    }
+    26%,
+    38%,
+    40%,
+    44%,
+    46%,
+    48% {
+        color: #fff;
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+}
+
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0vw 0vw 1vw #FA1C16, 0vw 0vw 3vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw 10vw #FA1C16, 0vw 0vw .4vw #FED128, .5vw .5vw .1vw #806914;
+        color: #FED128;
+    }
+    50% {
+        text-shadow: 0vw 0vw .5vw #800E0B, 0vw 0vw 1.5vw #800E0B, 0vw 0vw 5vw #800E0B, 0vw 0vw 5vw #800E0B, 0vw 0vw .2vw #800E0B, .5vw .5vw .1vw #40340A;
+        color: #806914;
+    }
+}
+
+@keyframes flux {
+    0%,
+    100% {
+        text-shadow: 0vw 0vw 1vw #1041FF, 0vw 0vw 3vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw 10vw #1041FF, 0vw 0vw .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+        color: #28D7FE;
+    }
+    50% {
+        text-shadow: 0vw 0vw .5vw #082180, 0vw 0vw 1.5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw 5vw #082180, 0vw 0vw .2vw #082180, .5vw .5vw .1vw #0A3940;
+        color: #146C80;
+    }
+}
+
+
+/*****Breakpoint kleine devices****/
+
+@media screen and (max-width: 43.6875em) {
+    .letterlijk section {
+        padding: 1em;
+    }
+    .letterlijk section h1 {
+        font-size: 3em;
+    }
+    .letterlijk section p {
+        font-size: 1.2em;
+    }
+    .letterlijk .neon {
+        font-size: 3em;
+    }
+    .letterlijk .flux {
+        font-size: 1.5em;
+    }
+    .letterlijk {
+        background-size: .3em;
+    }
+    .smurf {
+        display: none;
+    }
+}
+
+
+/*****Breakpoint ipad****/
+
+@media screen and (min-width: 43.75em) and (max-width: 68.6875em) {
+    .letterlijk section p {
+        column-count: 1;
+        column-gap: none;
+        column-rule: none;
+        text-align: left;
+    }
+    .letterlijk section {
+        padding: 5em;
+    }
+    .letterlijk .neon {
+        font-size: 6em;
+    }
+    .smurf {
+        width: 15%;
+        top: 70em
+    }
+}
+
+
+/*******Breakpoint laptop******/
+
+@media screen and (min-width: 68.75em) and (max-width: 87.4375em) {
+    .letterlijk .neon {
+        font-size: 7em;
+    }
+    .smurf {
+        width: 20%;
+        top: 65em
+    }
+}
+
+
+/*******Breakpoint desktop******/
+
+@media screen and (min-width: 87.5em) {
+    .letterlijk section p {
+        width: 45em;
+    }
+}
