@@ -7,7 +7,7 @@
 toggleClass('.show', 'tooltipelement');*/
 
 $('.toggleModal').on('click', function (e) {
-    $('.modal').toggleClass('active');
+    $('.leeslijst').toggleClass('active');
 });
 
 setTimeout(function () {

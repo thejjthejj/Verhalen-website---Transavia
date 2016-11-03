@@ -721,7 +721,7 @@ input[type=password]:valid {
     padding-top: .3em;
 }
 
-.modal {
+.leeslijst {
     display: none;
     position: fixed;
     top: 50%;
@@ -737,7 +737,7 @@ input[type=password]:valid {
     box-shadow: 0 0 0 200em rgba(0, 0, 0, 0.5);
 }
 
-.modal p {
+.leeslijst p {
     margin-top: 1em;
     width: 100%;
     text-align: center;
@@ -745,15 +745,15 @@ input[type=password]:valid {
     color: #d6dada;
 }
 
-.modal i {
+.leeslijst i {
     cursor: pointer;
 }
 
-.modal p i {
+.leeslijst p i {
     font-size: 1.8em;
 }
 
-.modal article {
+.leeslijst article {
     width: 100%;
     border: 1px solid #d6dada;
     display: flex;
